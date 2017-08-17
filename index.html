@@ -6,6 +6,7 @@
     <title>Home - Alexandre Le Lain</title>
     <link rel="shortcut icon" href="res/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
@@ -39,6 +40,7 @@
         <a class="btn btn-primary" href="#" role="button"></a>
       </section>
     </div>
+    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
   </body>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -46,7 +48,10 @@
     <script src="js/traductions.js"></script>
     <script src="js/functions.js"></script>
     <script>
-      $(document).ready(() => {trad();});
+      $(document).ready(() => {
+        trad();
+        window.onscroll = () => {scrollFunction()};
+      });
     </script>
   </footer>
 </html>

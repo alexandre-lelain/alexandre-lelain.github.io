@@ -64,6 +64,27 @@ hr{
   border-color: #004ca0;
 }
 
+/* Button back to Top */
+#btnTop{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #404040;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.7em;
+}
+
+#btnTop:hover{
+  background-color: #262626;
+}
+
 /* Responsiveness */
 @media(min-width:768px){
   h1{
