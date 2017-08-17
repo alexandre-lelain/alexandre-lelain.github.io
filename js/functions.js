@@ -10,3 +10,7 @@ function getRandomColor() {
 function setRandomColor(e) {
   e.style.color = getRandomColor();
 }
+
+function hideCollapse(){
+  $("#myNavbar").collapse('hide');
+}
