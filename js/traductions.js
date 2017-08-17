@@ -14,13 +14,13 @@ function saveLangEn(){
 
 function tradFr(){
   $('.cv a').text("Qui suis-je ?");
-  $('.more-projects a').text("Projets en cours..");
+  $('.more-projects a').text("Projets en cours...");
   saveLangFr();
 }
 
 function tradEn(){
   $('.cv a').text("Who am I ?");
-  $('.more-projects a').text("More projects soon..");
+  $('.more-projects a').text("More projects soon...");
   saveLangEn();
 }
 
