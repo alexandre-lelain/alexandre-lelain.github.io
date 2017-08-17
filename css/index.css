@@ -32,18 +32,34 @@ h1{
 }
 
 .project:hover{
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.project:hover .btn{
+  background-color: #0a60aa;
+}
+
+.project:hover .btn:hover{
+  background-color: #00437c;
 }
 
 hr{
   width: 80%;
-  border: solid 1px #f2f2f2;
+  border: solid 1px #bfbfbf;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .cv{
   background-image: url(../res/cv.jpg);
+}
+
+.agent-web{
+  background-image: url(../res/agent-web.jpg);
+}
+
+.top-shape{
+  background-image: url(../res/top-shape.jpg);
 }
 
 .more-projects{
@@ -91,7 +107,7 @@ hr{
     margin-top: -5px;
     position: absolute;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -160px;
   }
 
   .nav-item:hover img{
@@ -113,7 +129,7 @@ hr{
   }
 
   h1{
-    margin-top: 3px;
+    margin-top: -5px;
   }
 
   .btn{

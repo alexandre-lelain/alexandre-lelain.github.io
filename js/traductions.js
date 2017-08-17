@@ -13,13 +13,19 @@ function saveLangEn(){
 }
 
 function tradFr(){
-  $('.cv a').text("Qui suis-je ?");
+  $('h1').text("Bienvenue chez moi.");
+  $('.cv a').text("Mon Site Web");
+  $('.agent-web a').text("Agent Web");
+  $('.top-shape a').text("Top Shape");
   $('.more-projects a').text("Projets en cours...");
   saveLangFr();
 }
 
 function tradEn(){
-  $('.cv a').text("Who am I ?");
+  $('h1').text("Welcome to my world.");
+  $('.cv a').text("My Website");
+  $('.agent-web a').text("Web Agent");
+  $('.top-shape a').text("Top Shape");
   $('.more-projects a').text("More projects soon...");
   saveLangEn();
 }
