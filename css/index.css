@@ -1,0 +1,48 @@
+body{
+  text-align: center;
+}
+
+nav{
+  background: #404040;
+  color: lightGray;
+  padding: 20px 0px;
+}
+
+.iconsLang{
+  position: fixed;
+  right: 10px;
+  top: 30px;
+}
+
+.iconsLang img{
+  margin-right: 10px;
+}
+
+.iconsLang img:hover{
+  cursor: pointer;
+}
+
+.project{
+  height: 50%;
+}
+
+.project:hover{
+  opacity: 0.9;
+}
+
+.cv{
+  background-image: url(../res/cv.png);
+}
+
+.btn{
+  position: relative;
+  top : 38%;
+  padding: 20px 20px;
+  font-size: 30px;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+.btn:hover{
+  background-color: #004ca0;
+  border-color: #004ca0;
+}
