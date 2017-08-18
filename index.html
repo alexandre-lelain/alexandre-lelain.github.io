@@ -55,13 +55,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/traductions.js"></script>
     <script src="js/functions.js"></script>
-    <script type="application/ld+json" src="js/metadata.js"></script>
     <script>
-      importMetaData();
       $(document).ready(() => {
         trad();
         window.onscroll = () => {scrollFunction()};
       });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "WebSite",
+        "name": "Alexandre Le Lain's website",
+        "author": "Alexandre Le Lain",
+        "image": "res/me.png",
+        "description": "My personnal website and projects.",
+        "creator": "Alexandre Le Lain"
+      }
     </script>
   </footer>
 </html>
