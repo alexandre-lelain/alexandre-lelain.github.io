@@ -16,14 +16,14 @@ function hideCollapse(){
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("btnTop").style.display = "block";
-    } else {
-        document.getElementById("btnTop").style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("btnTop").style.display = "block";
+  } else {
+      document.getElementById("btnTop").style.display = "none";
+  }
 }
 
 function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
+  $(document.body).animate({ scrollTop: 0 }, 500);
+  $(document.documentElement).animate({ scrollTop: 0 }, 500);
 }
