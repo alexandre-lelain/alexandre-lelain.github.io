@@ -31,18 +31,6 @@ h1{
   background-size: cover;
 }
 
-.project:hover{
-  opacity: 0.9;
-}
-
-.project:hover .btn{
-  background-color: #0a60aa;
-}
-
-.project:hover .btn:hover{
-  background-color: #00437c;
-}
-
 hr{
   width: 80%;
   border: solid 1px #bfbfbf;
