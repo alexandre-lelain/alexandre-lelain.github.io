@@ -13,7 +13,7 @@ function saveLangEn(){
 }
 
 function tradFr(){
-  $('h1').text("Bienvenue chez moi.");
+  $('.navbar-title').text("Bienvenue chez moi.");
   $('.cv a').text("Mon CV");
   $('.agent-web a').text("Agent Web");
   $('.top-shape a').text("Top Shape");
@@ -22,7 +22,7 @@ function tradFr(){
 }
 
 function tradEn(){
-  $('h1').text("Welcome to my world.");
+  $('.navbar-title').text("Welcome to my world.");
   $('.cv a').text("My Resume");
   $('.agent-web a').text("Web Agent");
   $('.top-shape a').text("Top Shape");
