@@ -22,15 +22,22 @@ nav{
 .navbar-title{
   margin: 0px 0px;
   cursor: pointer;
-  color: lightGrey;
+  color: lightgrey;
 }
 
 /* Landscape */
 .landscape{
     height: 100%;
     background-image: url(../res/landscape.jpg);
-    background-size: cover;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: -1;
+}
+
+.intro{
+    height: 400px;
+    position: relative;
 }
 
 .landscape-title,.landscape-button{
@@ -48,7 +55,7 @@ nav{
 /* Projects */
 
 .projects{
-    background: darkgrey;
+    height: 100%;
 }
 
 .project{
