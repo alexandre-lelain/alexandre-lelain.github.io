@@ -14,6 +14,9 @@ function saveLangEn(){
 
 function tradFr(){
   $('.navbar-title').text("Bienvenue chez moi.");
+  $('.landscape-title').text("Découvrez mes projets réalisés avec passion");
+  $('.landscape-subtitle').text("Web, IA, Android,..");
+  $('.landscape-button span').text("C'est parti");
   $('.cv a').text("Mon CV");
   $('.agent-web a').text("Agent Web");
   $('.top-shape a').text("Top Shape");
@@ -23,6 +26,9 @@ function tradFr(){
 
 function tradEn(){
   $('.navbar-title').text("Welcome to my world.");
+  $('.landscape-title').text("Discover my projects made with passion");
+  $('.landscape-subtitle').text("Web, AI, Android,..");
+  $('.landscape-button span').text("Let's go");
   $('.cv a').text("My Resume");
   $('.agent-web a').text("Web Agent");
   $('.top-shape a').text("Top Shape");

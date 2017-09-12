@@ -1,0 +1,78 @@
+.landscape{
+    height: 100%;
+    background-image: url(../res/landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: -1;
+}
+
+.intro{
+    height: 100%;
+    position: relative;
+}
+
+.landscape-title,.landscape-subtitle,.landscape-button{
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+.landscape-title{
+    width: 100%;
+    font-size: 2.5em;
+    color: #99ccff;
+    margin: 0px 0px;
+    margin-bottom: 100px;
+    opacity: 0.2;
+}
+
+.landscape-subtitle{
+    font-size: 3em;
+    color: white;
+    margin: 0px 0px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.landscape-button{
+    font-size: 2.5em;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: solid white 2px;
+}
+
+.landscape-button:hover{
+    background: white;
+    color: #449d44;
+    border-color: white;
+}
+
+.landscape-button .fa{
+    font-size: 0.8em;
+}
+
+@media(max-width:767px){
+
+    .landscape-title,.landscape-subtitle,.landscape-button{
+        top: 10%;
+    }
+
+    .landscape-title{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .landscape-subtitle{
+        font-size: 1.7em;
+        margin-bottom: 40px;
+    }
+
+    .landscape-button{
+        font-size: 1.4em;
+    }
+
+}

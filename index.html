@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -37,27 +36,28 @@
 
       </div>
       <div class="intro">
-          <h1 class="landscape-title noselect">Discover my projects made with passion</h1>
-          <button class="landscape-button">
-              <i class="glyphicon glyphicon-arrow-down" aria-hidden="true"></i>
-              Let's go !
-              <i class="glyphicon glyphicon-arrow-down" aria-hidden="true"></i>
+          <h1 class="landscape-title noselect"></h1>
+          <h2 class="landscape-subtitle"></h2>
+          <button class="landscape-button btn-success" onclick="discover();">
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <span></span>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
           </button>
       </div>
-          <div class="projects">
-              <section class="cv project">
-                <a class="btn btn-primary" href="https://alexandre-lelain.github.io/my-website" role="button"></a>
-              </section>
-              <section class="agent-web project">
-                <a class="btn btn-primary" href="https://alexandre-lelain.github.io/agentWeb/" role="button"></a>
-              </section>
-              <section class="top-shape project">
-                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.all.topshape" role="button"></a>
-              </section>
-              <section class="more-projects project">
-                <a class="btn btn-primary" click="disable" href="#" role="button"></a>
-              </section>
-          </div>
+      <div class="projects">
+          <section class="cv project">
+            <a class="btn btn-primary" href="https://alexandre-lelain.github.io/my-website" role="button"></a>
+          </section>
+          <section class="agent-web project">
+            <a class="btn btn-primary" href="https://alexandre-lelain.github.io/agentWeb/" role="button"></a>
+          </section>
+          <section class="top-shape project">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.all.topshape" role="button"></a>
+          </section>
+          <section class="more-projects project">
+            <a class="btn btn-primary" click="disable" href="#" role="button"></a>
+          </section>
+      </div>
     </div>
     <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
   </body>
@@ -69,6 +69,7 @@
     <script>
       $(document).ready(() => {
         trad();
+        animate();
         window.onscroll = () => {scrollFunction()};
       });
     </script>

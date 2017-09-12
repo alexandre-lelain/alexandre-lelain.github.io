@@ -1,55 +1,9 @@
+@import "header.css";
+@import "landscape.css";
+@import "mobile.css";
+
 body{
   text-align: center;
-}
-
-/* Header */
-nav{
-  padding: 30px 25px;
-}
-
-.navbar{
-  border-radius: 0px;
-  border: none;
-  background: #404040;
-  margin-bottom: 0px;
-}
-
-.nav-item{
-  cursor: pointer;
-  margin-right: 35px;
-}
-
-.navbar-title{
-  margin: 0px 0px;
-  cursor: pointer;
-  color: lightgrey;
-}
-
-/* Landscape */
-.landscape{
-    height: 100%;
-    background-image: url(../res/landscape.jpg);
-    position: fixed;
-    width: 100%;
-    top:0;
-    z-index: -1;
-}
-
-.intro{
-    height: 400px;
-    position: relative;
-}
-
-.landscape-title,.landscape-button{
-    text-align: center;
-    position: relative;
-    top: 40%;
-}
-
-.landscape-title{
-    width: 100%;
-    color: white;
-    margin: 0px 0px;
 }
 
 /* Projects */
@@ -93,11 +47,14 @@ nav{
   font-size: 30px;
   border-radius: 6px;
   box-shadow: 2px 2px 2px #888888;
+  border: solid 2px white;
+  word-wrap: break-word;
 }
 
 .btn:hover{
-  background-color: #004ca0;
-  border-color: #004ca0;
+  background-color: white;
+  border-color: white;
+  color: #004ca0;
 }
 
 /* Button back to Top */
@@ -109,7 +66,7 @@ nav{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #404040;
+  background-color: black;
   color: white;
   cursor: pointer;
   padding: 10px 15px;
@@ -118,7 +75,8 @@ nav{
 }
 
 #btnTop:hover{
-  background-color: #262626;
+  background-color: #e6e6e6;
+  color: #333333;
 }
 
 /* Responsiveness */

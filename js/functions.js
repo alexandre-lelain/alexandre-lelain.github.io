@@ -27,3 +27,23 @@ function topFunction() {
   $(document.body).animate({ scrollTop: 0 }, 500);
   $(document.documentElement).animate({ scrollTop: 0 }, 500);
 }
+
+function discover(){
+    $("html, body").animate({ scrollTop: $(window).height()/2}, 800);
+}
+
+function animate(){
+    if ($(window).width() > 768) {
+        $(".landscape-title").animate({
+            opacity: "1",
+            fontSize: "4.2em"
+        },500)
+    }
+    else {
+        $(".landscape-title").animate({
+            opacity: "1",
+            fontSize: "2.6em"
+        },500)
+    }
+
+}
