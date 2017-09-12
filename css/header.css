@@ -9,46 +9,35 @@
 .nav-item{
   cursor: pointer;
   margin-right: 35px;
+  margin-top: 25px;
 }
 
-.navbar-brand{
+.nav-brand{
     position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
     height: auto;
+    padding-top: 10px;
 }
 
 .navbar-title{
-  margin: 0px 0px;
   cursor: pointer;
   color: #f2f2f2;
-  display:inline-block;
+  font-size: 2.5em;
 }
 
 .icon-site{
     width: 60px;
-    display:block;
-    margin:auto;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: -15px;
 }
 
-
-/* Responsiveness */
-@media(min-width:768px){/*
-  .navbar-title{
-    margin-top: -5px;
-    position: absolute;
-    left: 50%;
-    margin-left: -160px;
-  }
-
-  .icon-site{
-      margin-top: -15px;
-  }
-
+@media(min-width:768px){
   .nav-item:hover img{
     width: 38px;
     height: auto;
-    margin-top: -8px;
-  }*/
+    margin-top: -5px;
+  }
 }
