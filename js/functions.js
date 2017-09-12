@@ -1,3 +1,6 @@
+const mobileWidth = 768;
+const motionSpeed = 500;
+
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
@@ -24,8 +27,8 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  $(document.body).animate({ scrollTop: 0 }, 500);
-  $(document.documentElement).animate({ scrollTop: 0 }, 500);
+  $(document.body).animate({ scrollTop: 0 }, motionSpeed);
+  $(document.documentElement).animate({ scrollTop: 0 }, motionSpeed);
 }
 
 function discover(){
@@ -33,17 +36,8 @@ function discover(){
 }
 
 function animate(){
-    if ($(window).width() > 768) {
-        $(".landscape-title").animate({
-            opacity: "1",
-            fontSize: "4.2em"
-        },500)
-    }
-    else {
-        $(".landscape-title").animate({
-            opacity: "1",
-            fontSize: "2.6em"
-        },500)
-    }
-
+    if ($(window).width() > mobileWidth)
+        $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed);
+    else
+        $(".landscape-title").animate({opacity: "1",fontSize: "2.6em"},motionSpeed);
 }

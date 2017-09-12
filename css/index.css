@@ -79,22 +79,6 @@ body{
   color: #333333;
 }
 
-/* Responsiveness */
-@media(min-width:768px){
-  .navbar-title{
-    margin-top: -5px;
-    position: absolute;
-    left: 50%;
-    margin-left: -160px;
-  }
-
-  .nav-item:hover img{
-    width: 38px;
-    height: auto;
-    margin-top: -8px;
-  }
-}
-
 /* Utils */
 .noselect {
   -webkit-touch-callout: none;

@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-     <div class="container-fluid">
+    <nav class="navbar navbar-default">
        <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <h1 onclick="setRandomColor(this)" class="noselect navbar-title" title="Click me!"></h1>
        </div>
+       <span class="noselect navbar-brand" onclick="setRandomColor(this)" title="Click me!">
+           <img class="icon-site" src="res/laptop.png" alt=""/>
+           <span class="navbar-title"></span>
+       </span>
        <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav navbar-right">
            <li class="nav-item active" onclick="hideCollapse()">
@@ -29,7 +31,6 @@
              <img src="res/france.png" title="français" alt="français" onclick="tradFr()"/>
            </li>
        </div>
-     </div>
    </nav>
     <div>
       <div class="landscape">
