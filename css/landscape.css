@@ -14,11 +14,6 @@
     position: relative;
 }
 
-.landscape-title,.landscape-subtitle,.landscape-button{
-    text-align: center;
-    position: relative;
-    top: 25%;
-}
 
 .landscape-title{
     width: 100%;
