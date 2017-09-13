@@ -1,9 +1,15 @@
 @import "header.css";
 @import "landscape.css";
 @import "projects.css";
+@font-face {
+  font-family: 'actor';
+  src: url('../fonts/bitter-regular.woff') format('woff'),
+  url('../fonts/bitter-regular.ttf') format('truetype');
+}
 
 body{
   text-align: center;
+  font-family: actor;
 }
 
 /* Button back to Top */

@@ -35,7 +35,7 @@
            </li>
        </div>
    </nav>
-    <div>
+    <div class="content">
       <div class="landscape">
 
       </div>
@@ -74,8 +74,7 @@
     <script>
       $(document).ready(() => {
         trad();
-        animate();
-        window.onscroll = () => {scrollFunction()};
+        initListeners();
       });
     </script>
     <script type="application/ld+json">

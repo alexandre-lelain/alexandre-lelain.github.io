@@ -18,6 +18,15 @@ function hideCollapse(){
   $("#myNavbar").collapse('hide');
 }
 
+function topFunction() {
+  $(document.body).animate({ scrollTop: 0 }, motionSpeed);
+  $(document.documentElement).animate({ scrollTop: 0 }, motionSpeed);
+}
+
+function shakeMe(e){
+    $(e).effect("shake");
+}
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("btnTop").style.display = "block";
@@ -26,23 +35,8 @@ function scrollFunction() {
   }
 }
 
-function topFunction() {
-  $(document.body).animate({ scrollTop: 0 }, motionSpeed);
-  $(document.documentElement).animate({ scrollTop: 0 }, motionSpeed);
-}
-
 function discover(){
-    $("html, body").animate({ scrollTop: $(window).height()/2}, 800);
-}
-
-function animate(){
-    if ($(window).width() > mobileWidth)
-        $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed);
-    else {
-        $(".landscape-title").animate({opacity: "1",fontSize: "2.4em"},motionSpeed);
-        displayMenuForMobile();
-    }
-
+    $("html, body").animate({ scrollTop: $(window).height()-70}, 800);
 }
 
 function displayMenuForMobile(){
@@ -50,6 +44,33 @@ function displayMenuForMobile(){
     $(".span-fr").text("français");
 }
 
-function shakeMe(e){
-    $(e).effect("shake");
+function animateFeatures(){
+    if ($(window).width() > mobileWidth)
+        $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed,()=>{animateSubTitle()});
+    else {
+        $(".landscape-title").animate({opacity: "1",fontSize: "2.4em"},motionSpeed,()=>{animateSubTitle()});
+        displayMenuForMobile();
+    }
+}
+
+function animateSubTitle(){
+    if ($(window).width() > mobileWidth)
+        $(".landscape-subtitle").animate({opacity: "1",fontSize: "3em"},motionSpeed,()=>{animateButton()});
+    else {
+        $(".landscape-subtitle").animate({opacity: "1",fontSize: "1.7em"},motionSpeed,()=>{animateButton()});
+    }
+
+}
+
+function animateButton(){
+    if ($(window).width() > mobileWidth)
+        $(".landscape-button").animate({opacity: "1"},motionSpeed);
+    else {
+        $(".landscape-button").animate({opacity: "1"},motionSpeed);
+    }
+}
+
+function initListeners(){
+    window.onscroll = () => {scrollFunction()};
+    animateFeatures();
 }
