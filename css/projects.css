@@ -1,0 +1,62 @@
+.projects{
+    height: 100%;
+}
+
+.project{
+  height: 500px;
+  width: 70%;
+  border-radius: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cv{
+  background-image: url(../res/cv.jpg);
+}
+
+.agent-web{
+  background-image: url(../res/agent-web.jpg);
+}
+
+.top-shape{
+  background-image: url(../res/top-shape.jpg);
+}
+
+.more-projects{
+  background-image: url(../res/more-projects.jpg);
+}
+
+.btn{
+  position: relative;
+  top : 210px;
+  padding: 20px 20px;
+  font-size: 30px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px #888888;
+  border: solid 2px white;
+}
+
+.btn:hover{
+  background-color: white;
+  border-color: white;
+  color: #004ca0;
+}
+
+@media(max-width:767px){
+
+    .project{
+        width: 90%;
+        height: 300px;
+    }
+
+    .btn{
+        top : 120px;
+        padding: 15px 15px;
+        font-size: 25px;
+    }
+
+}

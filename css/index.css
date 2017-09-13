@@ -1,60 +1,9 @@
 @import "header.css";
 @import "landscape.css";
-@import "mobile.css";
+@import "projects.css";
 
 body{
   text-align: center;
-}
-
-/* Projects */
-
-.projects{
-    height: 100%;
-}
-
-.project{
-  height: 500px;
-  width: 70%;
-  border-radius: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.cv{
-  background-image: url(../res/cv.jpg);
-}
-
-.agent-web{
-  background-image: url(../res/agent-web.jpg);
-}
-
-.top-shape{
-  background-image: url(../res/top-shape.jpg);
-}
-
-.more-projects{
-  background-image: url(../res/more-projects.jpg);
-}
-
-.btn{
-  position: relative;
-  top : 210px;
-  padding: 20px 20px;
-  font-size: 30px;
-  border-radius: 6px;
-  box-shadow: 2px 2px 2px #888888;
-  border: solid 2px white;
-  word-wrap: break-word;
-}
-
-.btn:hover{
-  background-color: white;
-  border-color: white;
-  color: #004ca0;
 }
 
 /* Button back to Top */
@@ -77,6 +26,19 @@ body{
 #btnTop:hover{
   background-color: #e6e6e6;
   color: #333333;
+}
+
+@media(max-width:767px){
+
+    #btnTop{
+      background-color: #e6e6e6;
+      color: #333333;
+    }
+
+    #btnTop:hover{
+      background-color: black;
+      color: white;
+    }
 }
 
 /* Utils */

@@ -4,6 +4,12 @@
   background: #333333;
   margin-bottom: 0px;
   height: 80px;
+  z-index: 3;
+}
+
+.navbar-collapse{
+    background: #333333;
+
 }
 
 .nav-item{
@@ -40,4 +46,49 @@
     height: auto;
     margin-top: -5px;
   }
+}
+
+@media(max-width:767px){
+
+  .navbar-header{
+      height:80px;
+      padding-top: 15px;
+  }
+
+  .nav-brand{
+      width: auto;
+      text-align: left;
+      margin-left: 10px;
+  }
+
+  .navbar-collapse{
+      border-color: black !important;
+  }
+
+  .navbar-toggle{
+      border-color: #888 !important;
+  }
+
+  .navbar-title{
+      font-size: 1.4em;
+  }
+
+  .icon-site{
+      width: 37px;
+      margin-right: 5px;
+  }
+
+  .span-us,.span-fr{
+      color: #f2f2f2;
+      font-size: 1.2em;
+      margin-left: 5px;
+  }
+
+  .nav-item{
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
 }

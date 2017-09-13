@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Alexandre Le Lain</title>
     <link rel="shortcut icon" href="res/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
@@ -17,18 +18,20 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-       </div>
-       <div class="nav-brand">
-           <img class="icon-site" src="res/laptop.png" alt=""/>
-           <span class="noselect navbar-title" onclick="setRandomColor(this)" title="Click me!"></span>
+         <div class="nav-brand">
+             <img class="icon-site" src="res/laptop.png" alt="" onclick="shakeMe(this);" title="Shake me !"/>
+             <span class="noselect navbar-title" onclick="setRandomColor(this)" title="Click me!"></span>
+         </div>
        </div>
        <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav navbar-right">
-           <li class="nav-item active" onclick="hideCollapse()">
-             <img src="res/usa.png" title="english" alt="english" onclick="tradEn()"/>
+           <li class="nav-item active" onclick="tradEn();hideCollapse()" title="english">
+             <img src="res/usa.png" alt=""/>
+             <span class="span-us"></span>
            </li>
-           <li class="nav-item" onclick="hideCollapse()">
-             <img src="res/france.png" title="français" alt="français" onclick="tradFr()"/>
+           <li class="nav-item" onclick="tradFr();hideCollapse()" title="français" alt="français">
+             <img src="res/france.png" alt=""/>
+             <span class="span-fr"></span>
            </li>
        </div>
    </nav>
@@ -64,6 +67,7 @@
   </body>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/traductions.js"></script>
     <script src="js/functions.js"></script>

@@ -1,5 +1,5 @@
 const mobileWidth = 768;
-const motionSpeed = 500;
+const motionSpeed = 700;
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
@@ -38,6 +38,18 @@ function discover(){
 function animate(){
     if ($(window).width() > mobileWidth)
         $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed);
-    else
-        $(".landscape-title").animate({opacity: "1",fontSize: "2.6em"},motionSpeed);
+    else {
+        $(".landscape-title").animate({opacity: "1",fontSize: "2.4em"},motionSpeed);
+        displayMenuForMobile();
+    }
+
+}
+
+function displayMenuForMobile(){
+    $(".span-us").text("english");
+    $(".span-fr").text("français");
+}
+
+function shakeMe(e){
+    $(e).effect("shake");
 }
