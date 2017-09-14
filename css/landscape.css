@@ -23,9 +23,17 @@
 .landscape-title{
     width: 100%;
     font-size: 2.2em;
-    color: #99ccff;
+    color: #ccccff;
     margin-bottom: 100px;
     opacity: 0.2;
+}
+
+.landscape-subtitle-background{
+    background: #333333;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
 }
 
 .landscape-subtitle{
@@ -34,6 +42,8 @@
     margin-bottom: 120px;
     width: 100%;
     opacity: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .landscape-button{
@@ -55,6 +65,28 @@
     font-size: 0.8em;
 }
 
+@media(max-width:1134px){
+
+    .landscape-title{
+        font-size: 1.8em;
+        margin-bottom: 80px;
+    }
+
+    .landscape-subtitle-background{
+        width: 180px;
+    }
+
+    .landscape-subtitle{
+        font-size: 1.2em;
+        margin-bottom: 100px;
+    }
+
+    .landscape-button{
+        font-size: 1.6em;
+    }
+
+}
+
 @media(max-width:767px){
 
 
@@ -63,9 +95,15 @@
         margin-bottom: 40px;
     }
 
+    .landscape-subtitle-background{
+        width: 150px;
+    }
+
     .landscape-subtitle{
         font-size: 1em;
         margin-bottom: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .landscape-button{
@@ -80,7 +118,13 @@
     }
 }
 
-@media(max-height:450px){
+@media(max-height:650px){
+    .intro{
+        top: 10%;
+    }
+}
+
+@media(max-height:550px){
     .intro{
         top: 5%;
     }

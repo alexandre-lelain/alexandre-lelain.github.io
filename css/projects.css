@@ -5,12 +5,12 @@
 
 .project{
   height: 500px;
-  width: 70%;
+  width: 80%;
   border-radius: 32px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,7 +24,7 @@
 }
 
 .top-shape{
-  background-image: url(../res/top-shape.jpg);
+  background-image: url(../res/topshape.png);
 }
 
 .more-projects{
@@ -49,6 +49,7 @@
 
 @media(max-width:767px){
 
+
     .project{
         width: 90%;
         height: 300px;
@@ -58,6 +59,25 @@
         top : 120px;
         padding: 15px 15px;
         font-size: 22px;
+    }
+
+}
+
+@media(max-height:400px){
+
+    .projects{
+        margin-top: 70px;
+    }
+
+    .project{
+        width: 90%;
+        height: 200px;
+    }
+
+    .btn{
+        top : 75px;
+        padding: 10px 10px;
+        font-size: 18px;
     }
 
 }
