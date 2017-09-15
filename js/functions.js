@@ -26,75 +26,75 @@ function topFunction() {
 }
 
 function shakeMe(e){
-    $(e).effect("shake");
+  $(e).effect("shake");
 }
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("btnTop").style.display = "block";
+    document.getElementById("btnTop").style.display = "block";
   } else {
-      document.getElementById("btnTop").style.display = "none";
+    document.getElementById("btnTop").style.display = "none";
   }
 }
 
 function discover(){
-    $("html, body").animate({ scrollTop: $(window).height()-70}, 800);
+  $("html, body").animate({ scrollTop: $(window).height()-70}, 800);
 }
 
 function displayMenuForMobile(){
-    $(".span-us").text("english");
-    $(".span-fr").text("français");
+  $(".span-us").text("english");
+  $(".span-fr").text("français");
 }
 
 function animateFeatures(){
-    if ($(window).width() > tabletWidth)
-        $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed,()=>{animateSubTitle()});
-    else if ($(window).width() > mobileWidth) {
-        $(".landscape-title").animate({opacity: "1",fontSize: "3em"},motionSpeed,()=>{animateSubTitle()});
-    }
-    else {
-        $(".landscape-title").animate({opacity: "1",fontSize: "2.4em"},motionSpeed,()=>{animateSubTitle()});
-        displayMenuForMobile();
-    }
+  if ($(window).width() > tabletWidth)
+  $(".landscape-title").animate({opacity: "1",fontSize: "4.2em"},motionSpeed,()=>{animateSubTitle()});
+  else if ($(window).width() > mobileWidth) {
+    $(".landscape-title").animate({opacity: "1",fontSize: "3em"},motionSpeed,()=>{animateSubTitle()});
+  }
+  else {
+    $(".landscape-title").animate({opacity: "1",fontSize: "2.4em"},motionSpeed,()=>{animateSubTitle()});
+    displayMenuForMobile();
+  }
 }
 
 function animateSubTitle(){
-    if ($(window).width() > tabletWidth)
-        $(".landscape-subtitle").animate({opacity: "1",fontSize: "3em"},motionSpeed,()=>{animateButton()});
-    else if ($(window).width() > mobileWidth) {
-        $(".landscape-subtitle").animate({opacity: "1",fontSize: "2em"},motionSpeed,()=>{animateButton()});
-    }
-    else {
-        $(".landscape-subtitle").animate({opacity: "1",fontSize: "1.7em"},motionSpeed,()=>{animateButton()});
-    }
+  if ($(window).width() > tabletWidth)
+  $(".landscape-subtitle").animate({opacity: "1",fontSize: "3em"},motionSpeed,()=>{animateButton()});
+  else if ($(window).width() > mobileWidth) {
+    $(".landscape-subtitle").animate({opacity: "1",fontSize: "2em"},motionSpeed,()=>{animateButton()});
+  }
+  else {
+    $(".landscape-subtitle").animate({opacity: "1",fontSize: "1.7em"},motionSpeed,()=>{animateButton()});
+  }
 }
 
 function animateButton(){
-    $(".landscape-button").animate({opacity: "1"},motionSpeed,()=>{subtitleLoop()});
+  $(".landscape-button").animate({opacity: "1"},motionSpeed,()=>{subtitleLoop()});
 }
 
 function subtitleLoop(){
-    animateSubTitleLoop();
-     setInterval(function(){
-         animateSubTitleLoop()
-     }, 2000);
+  animateSubTitleLoop();
+  setInterval(function(){
+    animateSubTitleLoop()
+  }, 2000);
 }
 
 function animateSubTitleLoop(){
-    $(".landscape-subtitle").animate({opacity: "0"},1000,() => {
-        $(".landscape-subtitle").text(subtitleList[0]);
-        $(".landscape-subtitle").animate({opacity: "1"},1000,() => {
-           updateSubtitleList();
-        });
+  $(".landscape-subtitle").animate({opacity: "0"},1000,() => {
+    $(".landscape-subtitle").text(subtitleList[0]);
+    $(".landscape-subtitle").animate({opacity: "1"},1000,() => {
+      updateSubtitleList();
     });
+  });
 }
 
 function updateSubtitleList(){
-    subtitleList[subtitleList.length] = subtitleList[0];
-    subtitleList.splice(0,1);
+  subtitleList[subtitleList.length] = subtitleList[0];
+  subtitleList.splice(0,1);
 }
 
 function initListeners(){
-    window.onscroll = () => {scrollFunction()};
-    animateFeatures();
+  window.onscroll = () => {scrollFunction()};
+  animateFeatures();
 }

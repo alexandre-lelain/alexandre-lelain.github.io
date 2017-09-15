@@ -1,7 +1,7 @@
 const lang = {
-    label: "lang",
-    en: "en",
-    fr: "fr"
+  label: "lang",
+  en: "en",
+  fr: "fr"
 };
 
 function saveLangFr(){

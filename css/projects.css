@@ -1,6 +1,6 @@
 .projects{
-    height: 100%;
-    margin-top: -50px;
+  height: 100%;
+  margin-top: -50px;
 }
 
 .project{
@@ -49,33 +49,32 @@
 
 @media(max-width:767px){
 
+  .project{
+    width: 90%;
+    height: 300px;
+  }
 
-    .project{
-        width: 90%;
-        height: 300px;
-    }
-
-    .btn{
-        top : 120px;
-        padding: 15px 15px;
-        font-size: 22px;
-    }
+  .btn{
+    top : 120px;
+    padding: 15px 15px;
+    font-size: 22px;
+  }
 
 }
 
 @media(max-height:400px){
 
-    .projects{
-        margin-top: 70px;
-    }
+  .projects{
+    margin-top: 70px;
+  }
 
-    .project{
-        width: 90%;
-        height: 200px;
-    }
+  .project{
+    width: 90%;
+    height: 200px;
+  }
 
-    .btn{
-        top : 75px;
-    }
+  .btn{
+    top : 75px;
+  }
 
 }
