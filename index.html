@@ -56,9 +56,11 @@
         </section>
         <section class="agent-web project">
           <a class="btn btn-primary" href="https://alexandre-lelain.github.io/agentWeb/" role="button"></a>
+          <i class="more-info glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="modal" data-target="#modal-agentWeb"></i>
         </section>
         <section class="top-shape project">
           <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.all.topshape" role="button"></a>
+          <i class="more-info glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="modal" data-target="#modal-topshape"></i>
         </section>
         <section class="more-projects project">
           <a class="btn btn-primary" click="disable" href="#" role="button"></a>
@@ -68,6 +70,45 @@
     <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
   </body>
   <footer>
+    <div id="modal-agentWeb" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title modal-title-agentWeb"></h4>
+          </div>
+          <div class="modal-body modal-body-agentWeb">
+            <strong class="strong1"></strong>
+            <br/><p class="p1"></p>
+            <br/><p class="p2"></P>
+              <br/><strong class="strong2"></strong>
+              <br/><p class="p3"></P>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-modal btn-primary" data-dismiss="modal"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div id="modal-topshape" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title modal-title-topshape">Top Shape</h4>
+          </div>
+          <div class="modal-body modal-body-topshape">
+            <strong class="strong1"></strong>
+            <br/><p class="p1"></p>
+            <br/><strong class="strong2"></strong>
+            <br/><p class="p3"></P>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-modal btn-primary" data-dismiss="modal"></button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -1,6 +1,7 @@
 @import "header.css";
 @import "landscape.css";
 @import "projects.css";
+@import "modals.css";
 @font-face {
   font-family: 'actor';
   src: url('../fonts/bitter-regular.woff') format('woff'),

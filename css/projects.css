@@ -13,6 +13,7 @@
   margin-bottom: 60px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .cv{
@@ -44,7 +45,20 @@
 .btn:hover{
   background-color: white;
   border-color: white;
-  color: #004ca0;
+  color: #337ab7;
+}
+
+.more-info{
+    position: absolute;
+    right:20;
+    top:auto;
+    bottom:20;
+    font-size: 2.8em;
+}
+
+.more-info:hover{
+    cursor: pointer;
+    color:white;
 }
 
 @media(max-width:767px){
@@ -58,6 +72,10 @@
     top : 120px;
     padding: 15px 15px;
     font-size: 22px;
+  }
+
+  .more-info{
+      font-size: 2.1em;
   }
 
 }
