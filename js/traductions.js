@@ -30,6 +30,8 @@ function tradFr(){
   $('.modal-body-agentWeb .p3').text("Ce projet est un 'poc (proof of concept)', et n'en est qu'au stade de prototype, c'est pour cela que le nombre d'intéractions de l'agent est très limité, l'objectif étant juste de poser l'architecture (le squelette) de l'assistant web.");
   $('.modal-body-topshape .strong1').text("Description :");
   $('.modal-body-topshape .p1').text("Top Shape est une application Android permettant de calculer son IMC (indice de masse corporelle) ainsi que son IMG (indice de masse grasse) à l'aide de différents outils. L'application propose également un suivi quotidien de ces indices pour que l'utilisateurs puisse visualiser son évolution.");
+  $('.modal-body-topshape .strong2').text("Remarque :");
+  $('.modal-body-topshape .p3').text("L'application n'est disponible qu'en français à ce jour.");
   $('.btn-modal').text("Fermer");
   saveLangFr();
 }
@@ -54,7 +56,7 @@ function tradEn(){
   $('.modal-body-topshape .p1').text("Top Shape is an Android application that gives the users some tools to measure their BMI (Body Mass Index) and BFI (Body Fat Index) using different formulas. The application also offers a daily checkup of those indexes, in order to provide the users a way to visualize their evolution over time.");
   $('.modal-body-topshape .strong2').text("Note :");
   $('.modal-body-topshape .p3').text("Only french is supported by now.");
-  $('.btn-modal').text("Fermer");
+  $('.btn-modal').text("Close");
   saveLangEn();
 }
 
