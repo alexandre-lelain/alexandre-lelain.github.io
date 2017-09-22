@@ -17,7 +17,7 @@ function tradFr(){
   $('.landscape-title').text("Découvrez mes projets réalisés avec passion");
   $('.landscape-subtitle').text("Web");
   $('.landscape-button span').text("C'est parti");
-  $('.cv a').text("Mon CV");
+  $('.cv a').text("Mon Web-CV");
   $('.agent-web a').text("Agent Web");
   $('.top-shape a').text("Top Shape");
   $('.more-projects a').text("Projets en cours...");
@@ -27,7 +27,7 @@ function tradFr(){
   $('.modal-body-agentWeb .p1').text("Agent Web est un plugin opensource écrit en Javascript déstiné aux développeurs souhaitant intégrer un assistant personnel à leur site web.");
   $('.modal-body-agentWeb .p2').text("L'agent possède quelques intéractions avec l'utilisateur : il réagit si on lui clique dessus, si on le déplace à l'aide d'un 'drag', et peut répondre à quelques phrases basiques telles que 'comment vas-tu ?', 'hello','help',...");
   $('.modal-body-agentWeb .strong2').text("Remarque :");
-  $('.modal-body-agentWeb .p3').text("Ce projet est un 'poc (proof of concept)', et n'en est qu'au stade de prototype, c'est pour cela que le nombre d'intéractions de l'agent est très limité, l'objectif étant juste de poser l'architecture (le squelette) de l'assistant web.");
+  $('.modal-body-agentWeb .p3').text("Ce projet est un 'poc' (proof of concept), et n'en est qu'au stade de prototype, c'est pour cela que le nombre d'intéractions de l'agent est très limité, l'objectif étant juste de poser l'architecture (le squelette) de l'assistant web.");
   $('.modal-body-topshape .strong1').text("Description :");
   $('.modal-body-topshape .p1').text("Top Shape est une application Android permettant de calculer son IMC (indice de masse corporelle) ainsi que son IMG (indice de masse grasse) à l'aide de différents outils. L'application propose également un suivi quotidien de ces indices pour que l'utilisateurs puisse visualiser son évolution.");
   $('.modal-body-topshape .strong2').text("Remarque :");
@@ -41,7 +41,7 @@ function tradEn(){
   $('.landscape-title').text("Discover my projects made with passion");
   $('.landscape-subtitle').text("Web");
   $('.landscape-button span').text("Let's go");
-  $('.cv a').text("My Resume");
+  $('.cv a').text("My Web-Resume");
   $('.agent-web a').text("Web Agent");
   $('.top-shape a').text("Top Shape");
   $('.more-projects a').text("More projects soon...");

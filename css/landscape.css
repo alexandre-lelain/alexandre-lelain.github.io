@@ -89,7 +89,6 @@
 
 @media(max-width:767px){
 
-
   .landscape-title{
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -116,6 +115,14 @@
   .intro{
     top: 15%;
   }
+
+  .landscape-title{
+    margin-bottom: 80px;
+  }
+
+  .landscape-subtitle{
+    margin-bottom: 100px;
+  }
 }
 
 @media(max-height:650px){
@@ -127,5 +134,13 @@
 @media(max-height:550px){
   .intro{
     top: 5%;
+  }
+
+  .landscape-title{
+    margin-bottom: 40px;
+  }
+
+  .landscape-subtitle{
+    margin-bottom: 60px;
   }
 }
