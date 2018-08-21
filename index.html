@@ -1,135 +1,21 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Alexandre Le Lain">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Alexandre Le Lain</title>
-  <link rel="shortcut icon" href="res/favicon.ico">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="nav-brand">
-        <img class="icon-site" src="res/laptop.png" alt="" onclick="shakeMe(this);" title="Shake me !"/>
-        <span class="noselect navbar-title" onclick="setRandomColor(this)" title="Click me!"></span>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item active" onclick="tradEn();hideCollapse()" title="english">
-          <img src="res/usa.png" alt=""/>
-          <span class="span-us"></span>
-        </li>
-        <li class="nav-item" onclick="tradFr();hideCollapse()" title="français" alt="français">
-          <img src="res/france.png" alt=""/>
-          <span class="span-fr"></span>
-        </li>
-      </div>
-    </nav>
-    <div class="content">
-      <div class="landscape">
-
-      </div>
-      <div class="intro">
-        <h1 class="landscape-title noselect"></h1>
-        <div class="landscape-subtitle-background noselect">
-          <h2 class="landscape-subtitle"></h2>
-        </div>
-        <button class="landscape-button btn-success" onclick="discover();">
-          <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          <span></span>
-          <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="projects">
-        <section class="cv project">
-          <a class="btn btn-primary" href="https://alexandre-lelain.github.io/my-website" role="button"></a>
-        </section>
-        <section class="agent-web project">
-          <a class="btn btn-primary" href="https://alexandre-lelain.github.io/agentWeb/" role="button"></a>
-          <i class="more-info glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="modal" data-target="#modal-agentWeb"></i>
-        </section>
-        <section class="top-shape project">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.all.topshape" role="button"></a>
-          <i class="more-info glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="modal" data-target="#modal-topshape"></i>
-        </section>
-        <section class="more-projects project">
-          <a class="btn btn-primary" click="disable" href="#" role="button"></a>
-        </section>
-      </div>
-    </div>
-    <button onclick="topFunction()" id="btnTop" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alexandre Le Lain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Alexandre Le Lain</title>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <p>
+      If you don't get automatically redirected, please click on the following link :
+      <a href="https://alexandre-lelain.github.io/home">alexandre-lelain.github.io/home</a>.
+    </p>
+    <p>
+      It will bring you to the main entry point of my projects.
+    </p>
   </body>
-  <footer>
-    <div id="modal-agentWeb" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title modal-title-agentWeb"></h4>
-          </div>
-          <div class="modal-body modal-body-agentWeb">
-            <strong class="strong1"></strong>
-            <br/><p class="p1"></p>
-            <br/><p class="p2"></P>
-              <br/><strong class="strong2"></strong>
-              <br/><p class="p3"></P>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn-modal btn-primary" data-dismiss="modal"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="modal-topshape" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title modal-title-topshape">Top Shape</h4>
-          </div>
-          <div class="modal-body modal-body-topshape">
-            <strong class="strong1"></strong>
-            <br/><p class="p1"></p>
-            <br/><strong class="strong2"></strong>
-            <br/><p class="p3"></P>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn-modal btn-primary" data-dismiss="modal"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/traductions.js"></script>
-    <script src="js/functions.js"></script>
-    <script>
-    $(document).ready(() => {
-      trad();
-      initListeners();
-    });
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "WebSite",
-      "name": "Alexandre Le Lain's website",
-      "author": "Alexandre Le Lain",
-      "image": "res/me.png",
-      "description": "My personnal website and projects.",
-      "creator": "Alexandre Le Lain"
-    }
-    </script>
-  </footer>
-  </html>
+  <script>
+    window.location.href = "https://alexandre-lelain.github.io/home";
+  </script>
+</html>
