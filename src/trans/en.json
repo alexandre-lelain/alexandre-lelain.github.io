@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Welcome to my world",
+    "options": {
+      "en": "English",
+      "fr": "French"
+    }
+  },
+  "intro": {
+    "title": "Discover my projects made with passion",
+    "topics": {
+      "web": "Web",
+      "android": "Android",
+      "coffee": "Coffee",
+      "ai": "AI"
+    },
+    "btn": "Let's go for a tour"
+  },
+  "projects": [
+    {
+      "id": "cv",
+      "link": "https://alexandre-lelain.github.io/my-website",
+      "title": "My Web-Resume",
+      "description": "My web-resume made with ❤ with React. You will find everything about my past experience, my diploma and my hobbies there.",
+      "caption": "Click to know more !" 
+    },
+    {
+      "id": "topshape",
+      "link": "https://play.google.com/store/apps/details?id=com.all.topshape",
+      "title": "Top Shape",
+      "description": "My first Android app. It offers some tools to calculate various body mass/shape indexes, and also offers a daily follow up, thus giving to the users the posibility to check their evolution each day.",
+      "caption": "Click to know more !" 
+    },
+    {
+      "id": "webagent",
+      "link": "https://alexandre-lelain.github.io/agentWeb/",
+      "title": "Web Agent (soon IDA)",
+      "description": "Web Agent is a JavaScript plugin for developers. It is a very simple AI whose purpose is to help UX on websites. It is currently under progress.",
+      "caption": "Click to know more !" 
+    },
+    {
+      "id": "wip",
+      "link": "#",
+      "title": "Secret",
+      "description": "More projects coming soon...",
+      "caption": null 
+    }
+  ]
+}

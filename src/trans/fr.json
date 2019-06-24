@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Bienvenue chez moi",
+    "options": {
+      "en": "Anglais",
+      "fr": "Français"
+    }
+  },
+  "intro": {
+    "title": "Découvrez mes projets réalisés avec passion",
+    "topics": {
+      "web": "Web",
+      "android": "Android",
+      "coffee": "Café",
+      "ai": "IA"
+    },
+    "btn": "C'est parti pour la visite"
+  },
+  "projects": [
+    {
+      "id": "cv",
+      "link": "https://alexandre-lelain.github.io/my-website",
+      "title": "Mon Web-CV",
+      "description": "Mon web-cv fait avec ❤ avec React. Vous y trouverez toutes les informations concernant mon expérience, mon diplôme et mes passions.",
+      "caption": "Cliquez pour en savoir plus !" 
+    },
+    {
+      "id": "topshape",
+      "link": "https://play.google.com/store/apps/details?id=com.all.topshape",
+      "title": "Top Shape",
+      "description": "Ma première application Android. Elle offre tout un tas d'outils permettant aux utilisateurs de calculer divers indices corporels. Elle permet aussi d'avoir un suivi quotidien pour que les utilisateurs visualisent leur évolution en temps réél.",
+      "caption": "Cliquez pour en savoir plus !" 
+    },
+    {
+      "id": "webagent",
+      "link": "https://alexandre-lelain.github.io/agentWeb/",
+      "title": "Agent Web (bientôt IDA)",
+      "description": "Agent Web est un plugin JavaScript à destination des développeurs. C'est une petite IA très simple dont le but est d'améliorer l'UX des websites. Ce projet est actuellement en cours.",
+      "caption": "Cliquez pour en savoir plus !" 
+    },
+    {
+      "id": "wip",
+      "link": "#",
+      "title": "Secret",
+      "description": "De nouveaux projets bientôt...",
+      "caption": null 
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+@import 'styles/variables.scss';
+
+.header {
+
+  background-color: $darkTheme !important;
+
+  .option-icon {
+    margin-right: 10px;
+  }
+
+  .nav-item:hover {
+    background-color: $primaryColor;
+    border-radius: $borderRadiusBtnSecondary;
+    a {
+      color: $darkTheme !important;
+    }
+  }
+
+  .title-icon {
+    margin-right: 20px;
+    width: 50px;
+    @media screen and (max-width: $sm){
+      width: 32px;
+    }
+  }
+
+  @media screen and (min-width: $md) {
+    .navbar-brand {
+      font-size: 2.2rem;
+    } 
+  }
+
+  @media screen and (max-width: $xs) {
+    .navbar-brand {
+      font-size: 1rem;
+    } 
+
+  }
+}

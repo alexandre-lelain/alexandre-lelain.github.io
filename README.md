@@ -1,3 +1,7 @@
-# Welcome to my world.
+# Home
 
-Please visit [this link](https://alexandre-lelain.github.io) to view the page.
+This project is the entry point of all my other projects.
+
+Please visit it on alexandre-lelain.github.io/home.
+
+Made with ❤ with React.

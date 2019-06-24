@@ -1,0 +1,99 @@
+@import 'styles/variables.scss';
+
+.project {
+
+  text-decoration: none !important;
+  color: $darkTheme;
+  transition: all .2s ease-in-out;
+
+  &:hover, &:focus, &:active {
+    
+    .content {
+      opacity: 0.8;
+      color: $darkTheme;
+    }
+
+    .background {
+      transform: scale(1.1);
+    }
+  }
+
+  .background {
+    margin: 80px 0px;
+    transition: all .2s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: $borderRadiusBtnSecondary;
+    height: 60vh;
+    @media screen and (max-height: $smh) {
+      height: 80vh;
+    }
+  }
+
+  .content {
+    color: $darkTheme;
+    background-color: $primaryColor;
+    border-radius: $borderRadiusBtnSecondary;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 0.3;
+    height: 100%;
+    display: inline-block;
+    width: 35%;
+    padding: 10px 20px;
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $mdi) {
+
+      width: 40%;
+
+      .title {
+        font-size: 1.3rem;
+      }
+
+      .description, .caption {
+        font-size: 0.9rem;
+      }
+
+    }
+
+
+    @media screen and (max-width: $md) {
+
+      width: 50%;
+      opacity: 0.8;
+
+      .title {
+        font-size: 1.1rem;
+      }
+
+      .description, .caption {
+        font-size: 0.8rem;
+      }
+
+    }
+
+    @media screen and (max-width: $sm) {
+
+      padding: 10px 10px;
+      .title {
+        margin-bottom: 0px;
+      }
+    }
+
+    @media screen and (max-width: $xs) {
+
+      .title {
+        font-size: 1rem;
+      }
+
+      .description, .caption {
+        font-size: 0.7rem;
+      }
+
+    }
+  }
+}
