@@ -9,12 +9,14 @@ import cv from './res/cv.jpg'
 import topshape from './res/top-shape.png'
 import webagent from './res/agentweb.jpg'
 import wip from './res/wip.jpg'
+import avecVousDemain from './res/avec_vous_demain.jpg'
 
 const files = {
-  cv: cv,
-  topshape: topshape,
-  webagent: webagent,
-  wip: wip
+  cv,
+  topshape,
+  webagent,
+  wip,
+  avecVousDemain,
 }
 
 class Projects extends Component {
