@@ -2,7 +2,7 @@
   "name": "home",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexandre-lelain.github.io/home",
+  "homepage": "https://alexandre-lelain.github.io",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "i18next": "^11.6.0",
