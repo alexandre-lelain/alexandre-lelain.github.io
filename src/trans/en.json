@@ -19,7 +19,7 @@
   "projects": [
     {
       "id": "cv",
-      "link": "https://alexandre-lelain.github.io/my-website",
+      "link": "https://alexandre-lelain.github.io/my-website/",
       "title": "My Web-Resume",
       "description": "My web-resume made with ❤ with React. You will find everything about my past experience, my diploma and my hobbies there.",
       "caption": "Click to know more !"
