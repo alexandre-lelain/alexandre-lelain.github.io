@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
 import "./styles/backToTopBtn.css";
 
-class BackToTopBtn extends Component{
+class BackToTopBtn extends PureComponent{
 
   state = {
     display: "none"
@@ -22,7 +22,7 @@ class BackToTopBtn extends Component{
 
   render(){
     const { display } = this.state
-    
+
     return(
       <a href="#top" style={{display: display}} className="backToTop">
         <i className="fa fa-angle-double-up" aria-hidden="true"></i>
