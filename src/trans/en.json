@@ -25,6 +25,13 @@
       "caption": "Click to know more !"
     },
     {
+      "id": "jsExtra",
+      "link": "https://www.npmjs.com/package/js-extra",
+      "title": "Js-extra",
+      "description": "Does what native Javascript doesn't. This open-source JS lib is available on npm and provides some useful functions that are not built-in with native Javascript. This lib can be used in addition to the famous ones like Lodash or Underscore.Js.",
+      "caption": "Click to know more !"
+    },
+    {
       "id": "avecVousDemain",
       "link": "https://www.avec-vous-demain.com/",
       "title": "Avec vous demain",
