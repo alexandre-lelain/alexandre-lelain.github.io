@@ -25,6 +25,13 @@
       "caption": "Click to know more !"
     },
     {
+      "id": "componentsExtra",
+      "link": "https://www.npmjs.com/package/components-extra",
+      "title": "components-extra",
+      "description": "An open-source lib made of React components. Based on styled-components' styling system and material-ui's standards, it aims to provide web developers with a set of 'complex' but fast-to-use components to build web apps the fastest posible.",
+      "caption": "Click to know more !"
+    },
+    {
       "id": "jsExtra",
       "link": "https://www.npmjs.com/package/js-extra",
       "title": "Js-extra",

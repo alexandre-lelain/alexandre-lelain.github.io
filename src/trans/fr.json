@@ -25,9 +25,16 @@
       "caption": "Cliquez pour en savoir plus !"
     },
     {
+      "id": "componentsExtra",
+      "link": "https://www.npmjs.com/package/components-extra",
+      "title": "components-extra",
+      "description": "Une lib open-source de composants React. Basée sur le système de style de styled-components, et sur les standards de material-ui, elle sert à fournir à des développeurs un set de composants dits 'molécules' pour monter un site web le plus rapidement possible.",
+      "caption": "Cliquez pour en savoir plus !"
+    },
+    {
       "id": "jsExtra",
       "link": "https://www.npmjs.com/package/js-extra",
-      "title": "Js-extra",
+      "title": "js-extra",
       "description": "Une lib JavaScript! Cette lib open-source disponible sur npm propose des fonctions très utiles qui ne sont pas natives à Javascript. Elle sert de complèment à de celèbres librairies comme Lodash ou underscore.js.",
       "caption": "Cliquez pour en savoir plus !"
     },

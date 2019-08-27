@@ -11,6 +11,7 @@ import webagent from './res/agentweb.jpg'
 import wip from './res/wip.jpg'
 import avecVousDemain from './res/avec_vous_demain.jpg'
 import jsExtra from './res/js-extra.png'
+import componentsExtra from './res/components-extra.png'
 
 const files = {
   cv,
@@ -19,6 +20,7 @@ const files = {
   wip,
   avecVousDemain,
   jsExtra,
+  componentsExtra,
 }
 
 class Projects extends Component {
